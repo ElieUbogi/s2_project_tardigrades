@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
-        public bool Face_1;
-        public bool down;
-        public bool Face_2;
-        public bool right;
-        public bool Face_3;
-        public bool front;
-        public bool Face_4;
-        public bool back;
-        public bool Face_5;
-        public bool left;
-        public bool Face_6;
-        public bool up;
-        public static bool CanGo;
+    public bool Face_1;
+    public bool down;
+    public bool Face_2;
+    public bool right;
+    public bool Face_3;
+    public bool front;
+    public bool Face_4;
+    public bool back;
+    public bool Face_5;
+    public bool left;
+    public bool Face_6;
+    public bool up;
+    public static bool CanGo;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,6 @@ public class Wall : MonoBehaviour
     }
      void OnTriggerEnter(Collider chose)
     {
-        
 
         if (chose.gameObject.tag == ("Face 1"))
         {
