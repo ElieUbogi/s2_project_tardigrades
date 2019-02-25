@@ -53,8 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\mainchara.cs" />
-     <Compile Include="Assets\Wall.cs" />
+     <Compile Include="Assets\script\mainchara.cs" />
+     <Compile Include="Assets\script\Wall.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
