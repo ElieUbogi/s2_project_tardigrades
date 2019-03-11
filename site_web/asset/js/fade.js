@@ -1,16 +1,20 @@
+$(document).ready(function(){
+	$(".footer").css("bottom", "-60px");
+	$(".navbar").css("background-color", "rgba(11,31,36,0.2)");
+})
 $(window).on("scroll", function() {
 	if($(window).scrollTop() > 500) {
-		$(".navbar").addClass("scrollnav");
+		$(".navbar").css("background-color", "rgba(11,31,36,0.9)");
 	} else {
-		$(".navbar").removeClass("scrollnav");
+		$(".navbar").css("background-color", "rgba(11,31,36,0.2)");
 	}
 });
 
 $(window).on("scroll", function() {
 	if($(window).scrollTop() > 60) {
-		$(".footer").addClass("scrollfooter");
+		$(".footer").css("bottom", "0px");
 	} else {
-		$(".footer").removeClass("scrollfooter");
+		$(".footer").css("bottom", "-60px");
 	}
 });
 

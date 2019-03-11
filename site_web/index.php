@@ -12,7 +12,7 @@
 		<?php 
 			require("asset/php/app/header.php");
 		?>
-		<div id="contenu" style="">
+		<div id="contenu">
 			<?php
 			require($pinfo[1]);
 			require("asset/php/app/footer.php");

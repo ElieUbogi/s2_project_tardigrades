@@ -1,0 +1,30 @@
+.photo{
+	margin: 10px;
+	width: 170px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.photo > a{
+	text-align: center;
+}
+
+.photo > a > div{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 24px;
+	text-shadow: 2px 2px red;
+}
+
+.photo:hover > a > img{
+	filter: blur(2px);
+}
+
+.photo:hover > a > div{
+	display: inline-block;
+}

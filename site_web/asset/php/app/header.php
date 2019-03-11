@@ -30,7 +30,7 @@
 					<div style="padding-bottom: 5px; background-color: #666; border-radius: 20px; cursor: default;">
 						<a href="<?= $liendusite ?>/fr/"><img class="flag" width="20" src="<?= $liendusite ?>/asset/img/flag_fr.png"></a>
 						<span style="color: lightgrey;"> | </span>
-						<a href="<?= $liendusite ?>/en/"><img class="flag" width="20" src="<?= $liendusite ?>/asset/img/flag_en.png"></a>	
+						<a href="<?= $liendusite ?>/fr/"><img class="flag" width="20" src="<?= $liendusite ?>/asset/img/flag_en.png"></a>	
 					</div>
 				</div>
 			</li>

@@ -1,7 +1,5 @@
 <?php
-#array("nom de la page", "chemin")
-#RewriteRule ^([a-z]+)/([a-z0-9]+)$ index.php?lang=$1&page=$2
-#RewriteRule ^([a-z]+)/([a-z0-9]+)/$ index.php?lang=$1&page=$2
+#array(nom_de_la_page, chemin, id_associé_au_menu, liste_des_styles_a_importer)
 if (isset($_GET['lang'])) {
 
 	$lang = $_GET['lang'];
@@ -41,19 +39,19 @@ if (!isset($erreur)) {
 
 		if ($page == $lang_menulien_dl){
 
-			$pinfo = array($lang_header_dl, "asset/page/dl.php", "dl");
+			$pinfo = array($lang_header_dl, "asset/page/dl.php", "dl", array("dl"));
 
 		}elseif ($page == $lang_menulien_about_1) {
 
-			$pinfo = array($lang_header_about." ".$lang_header_about_1, "asset/page/game.php", "a");
+			$pinfo = array($lang_header_about." ".$lang_header_about_1, "asset/page/game.php", "a", array("jeu"));
 			
 		}elseif ($page == $lang_menulien_about_2) {
 
-			$pinfo = array($lang_header_about." ".$lang_header_about_2, "asset/page/equipe.php", "a");
+			$pinfo = array($lang_header_about." ".$lang_header_about_2, "asset/page/equipe.php", "a", array("equipe", "modal"));
 			
 		}elseif ($page == $lang_menulien_contact) {
 
-			$pinfo = array($lang_header_contact, "asset/page/contact.php", "contact");
+			$pinfo = array($lang_header_contact, "asset/page/contact.php", "contact", array("contact"));
 			
 		}else{
 
@@ -64,7 +62,7 @@ if (!isset($erreur)) {
 		}
 	}else{
 
-		$pinfo = array($lang_titre_home, "asset/page/home.php", "home");
+		$pinfo = array($lang_titre_home, "asset/page/home.php", "home", array("home"));
 
 	}
 }

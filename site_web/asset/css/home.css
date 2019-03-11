@@ -1,0 +1,53 @@
+#video{
+	width: 100%;
+	background-image: url("https://media.discordapp.net/attachments/493401051140194314/533322742557179914/2019-01-11_17.34.03.png");
+}
+
+#vidéo > #overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 0;
+}
+
+.sectiontitle{
+	color: rgb(33, 37, 41);
+	background-color: #e6e6e6;
+	border: 1px solid #f2f2f2;
+	display: inline-block;
+}
+
+.subelem{
+	position: absolute;
+	background-color: grey;
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	height: 500px;
+	margin: 50px;
+}
+
+#subeleml{
+	left: -250px;
+}
+
+#subelemr{
+	right: -250px;
+}
+
+#subeleml.subelemactive{
+	left: 20%;
+}
+
+#subelemr.subelemactive{
+	right: 20%;
+}
+
+.subelemactive{
+	display: inline-block;
+	width: 350px;
+	height: 500px;
+	margin: 50px;
+}

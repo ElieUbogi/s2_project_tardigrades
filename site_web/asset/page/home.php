@@ -1,4 +1,3 @@
-<script type="text/javascript" src="<?= $liendusite; ?>/asset/js/iframe.js"></script>
 <div id="video">
 	<div id="overla"></div>
 	<div id="playe"></div>
@@ -13,15 +12,9 @@
 	</div>
 
 	
-		<div class="subelem" id="subeleml">Element 1</div>
-		<div class="subelem" id="subelemr">Element 2</div>
+		<div class="subelem" id="subeleml"><i style="font-size: 70px;" class="fas fa-users"></i></div>
+		<div class="subelem" id="subelemr"><i style="font-size: 70px;" class="fas fa-gamepad"></i></div>
 	
 </div>
 <script type="text/javascript">taille();</script>
-<?= $lang_acc ?><br>
 
-<div style="width: 80px; height: 80px; background-color: #ccc; display: inline-block;"></div>
-<div style="width: 80px; height: 80px; background-color: rgb(11,31,36); display: inline-block;"></div>
-<div style="width: 80px; height: 80px; background-color: #666; display: inline-block;"></div>
-<div style="width: 80px; height: 80px; display: inline-block;" class="bg-primary"></div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Ceci ets un test<br>

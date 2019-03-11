@@ -1,4 +1,5 @@
 <!-- Meta Données -->
+
 	<title><?= $pinfo[0]." | ".$nomdusite; ?></title>
 
 	<meta charset="utf-8">
@@ -6,6 +7,7 @@
 	<meta name="author" content="<?= $auteur; ?>">
 	<meta name="description" content="<?= $description; ?>">
 	<link rel="icon" href="<?= $liendusite ?><?= $logo; ?>" type="image/jpg">
+
 <!--  -->
 
 <!-- Importations -->
@@ -28,10 +30,26 @@
 	<script src="<?= $liendusite ?>/asset/module/scrollbar/jquery.mCustomScrollbar.js"></script>
 	<script src="<?= $liendusite ?>/asset/js/scrollbar.js"></script>
 	-->
-	<!-- JS Effet fade -->
-	<script type="text/javascript" src="<?= $liendusite ?>/asset/js/fade.js"></script>
+	<?php
+	if ($pinfo[2] == "home") {
+		?>
+		<!-- JS Effet fade -->
+		<script type="text/javascript" src="<?= $liendusite ?>/asset/js/fade.js"></script>
+		<!--<script type="text/javascript" src="<?= $liendusite; ?>/asset/js/iframe.js"></script>
+		<?php
+	}
+	?>
 	<!-- Importation des feuilles de styles -->
 	<link rel="stylesheet" type="text/css" href="<?= $liendusite ?>/asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?= $liendusite ?>/asset/css/modal.css">
+	<?php
 
+	if (isset($pinfo[3])) {
+		foreach ($pinfo[3] as $value) {
+		?>
+		<link rel="stylesheet" type="text/css" href="<?= $liendusite ?>/asset/css/<?= $value ?>.css">
+		<?php
+		}
+	}
+
+	?>
 <!--  -->
