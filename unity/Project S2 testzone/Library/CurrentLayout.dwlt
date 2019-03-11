@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 498}
   m_MaxSize: {x: 14002, y: 14048}
   vertical: 0
-  controlID: 91
+  controlID: 120
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 92
+  controlID: 13
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 93
+  controlID: 14
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -480,20 +480,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/fonts
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets
+  - Assets/fonts
   m_LastFoldersGridSize: 58
   m_LastProjectPath: D:\projects\s2_project_tardigrades\unity\Project S2 testzone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 080b0000
-    m_LastClickedID: 2824
-    m_ExpandedIDs: 00000000080b00005e11000000ca9a3b
+    m_SelectedIDs: aa100000
+    m_LastClickedID: 4266
+    m_ExpandedIDs: 00000000080b00007c11000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -521,7 +521,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000080b00005e110000
+    m_ExpandedIDs: 00000000080b00007c110000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,21 +642,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff44140000
+      m_ExpandedIDs: 7eecffff9cecffffa6ecffffb2edffffd0edffffe4efffff34f8ffff52f8ffff68faffffd4fbffff70140000d03a0000d83a0000d83d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text
+        m_OriginalName: Text
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 15080
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -697,9 +697,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9619825, y: 4.6320305, z: -1.9961264}
+    m_Target: {x: 3.3715014, y: -0.413826, z: -0.21090698}
     speed: 2
-    m_Value: {x: 0.9619825, y: 4.6320305, z: -1.9961264}
+    m_Value: {x: 3.3715014, y: -0.413826, z: -0.21090698}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -727,19 +727,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.081070356, y: -0.9114494, z: 0.21755747, w: 0.33964145}
+    m_Target: {x: 0.3629539, y: -0.10228714, z: 0.04012223, w: 0.9253065}
     speed: 2
-    m_Value: {x: 0.081070356, y: -0.9114494, z: 0.21755747, w: 0.33964145}
+    m_Value: {x: 0.3629539, y: -0.10228714, z: 0.04012223, w: 0.9253065}
   m_Size:
-    m_Target: 6.3564267
+    m_Target: 10.967055
     speed: 2
-    m_Value: 6.3564267
+    m_Value: 10.967055
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.081070356, y: -0.9114494, z: 0.21755747, w: 0.33964145}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
