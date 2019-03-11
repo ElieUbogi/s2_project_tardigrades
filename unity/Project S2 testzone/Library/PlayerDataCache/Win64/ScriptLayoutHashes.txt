@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/elieu/Documents/Project S2 testzone.exe
+D:/unity/1er_soutenance/lvl_1/Project S2 testzone.exe
 SceneListBegin?
 Assets/scene S2 test.unity
 SceneListEnd?
