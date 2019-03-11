@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Stark/Desktop/s2_project_tardigrades/unity/Project S2 testzone/l'exe/Project S2 testzone.exe
+D:/unity/1er_soutenance/reseaux/Project S2 testzone.exe
 SceneListBegin?
 Assets/scene S2 test.unity
 SceneListEnd?
@@ -70,6 +70,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GUIController
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ClickAndDrag
 07d7dd9c0560fd4cffdebc7ee8ecef23 Assembly-CSharp.dll:.InputToEvent
@@ -244,6 +245,7 @@ c9f6a97ea0add8e28f0e02bcd53957e2 Assembly-CSharp.dll:.PickupCamera
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 c9f6a97ea0add8e28f0e02bcd53957e2 Assembly-CSharp.dll:.ThirdPersonCamera
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ThirdPersonNetwork
+83e769eee07fc231384c812eedbb8224 Assembly-CSharp.dll:.NetworkController
 41d3ef6836ee21c214a1a337de8b357e Assembly-CSharp.dll:.RpsDemoConnect
 c5fd97cc10b89deaf7c60af66a6b0d5a Assembly-CSharp.dll:.SupportLogger
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PickupTriggerForward
@@ -270,5 +272,3 @@ e1b8eaae6a90f88343f8be6d517488f6 Assembly-CSharp.dll:.PhotonView
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ClickDetector
 e7e6571fb792bd5234807be154062d6f Assembly-CSharp.dll:.CubeExtra
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GUIController
-83e769eee07fc231384c812eedbb8224 Assembly-CSharp.dll:.NetworkController
