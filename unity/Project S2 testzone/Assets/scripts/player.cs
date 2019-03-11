@@ -40,19 +40,22 @@ public class player : MonoBehaviour
     }
     
      void OnCollisionExit(Collision chose)
-    {
+     {
         if (chose.gameObject.tag == ("Wall"))
         {
             CanGo = false;
         }
-    }
+     }
 
     // Update is called once per frame
     void Update()
     {
         Menu = fin.mainMenu;
         //en cas de probleme :
-        if(Input.GetKeyDown(KeyCode.RightShift)){CanGo=true;}
+        if(Input.GetKeyDown(KeyCode.RightShift))
+        {
+            CanGo =true;
+        }
 
         if (CanGo)
         {
