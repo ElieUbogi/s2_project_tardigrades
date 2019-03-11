@@ -14,7 +14,7 @@ public class player : MonoBehaviour
     public GameObject safe;
     public GameObject Player;
     public uint score;
-
+    public GameObject menuPanel;
 
 
     public float multiplicateurV;
@@ -24,8 +24,6 @@ public class player : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         multiplicateurV=400;
         CanGo = true;
-        safe = GameObject.Find("safe");
-        Player = GameObject.Find("Player");
         score = 0;
     }
 
@@ -76,6 +74,11 @@ public class player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            if (menuPanel.active)
+            {
+                menuPanel.SetActive(false);
+                score = 0;
+            }
             this.transform.position = safe.transform.position;
         }
         

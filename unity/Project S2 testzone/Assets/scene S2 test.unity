@@ -530,9 +530,10 @@ MonoBehaviour:
   vitesseX: 0
   vitesseY: 0
   vitesseZ: 0
-  safe: {fileID: 0}
-  Player: {fileID: 0}
+  safe: {fileID: 130690868}
+  Player: {fileID: 705592520}
   score: 0
+  menuPanel: {fileID: 642354858}
   multiplicateurV: 0
 --- !u!54 &705592522
 Rigidbody:
