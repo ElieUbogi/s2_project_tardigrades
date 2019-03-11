@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Face 1
   - Face 4
+  - safe
   layers:
   - Default
   - TransparentFX
