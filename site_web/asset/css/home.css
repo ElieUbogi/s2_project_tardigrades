@@ -1,6 +1,9 @@
 #video{
 	width: 100%;
 	background-image: url("https://media.discordapp.net/attachments/493401051140194314/533322742557179914/2019-01-11_17.34.03.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
 }
 
 #vidéo > #overlay{

@@ -35,7 +35,7 @@
 		?>
 		<!-- JS Effet fade -->
 		<script type="text/javascript" src="<?= $liendusite ?>/asset/js/fade.js"></script>
-		<!--<script type="text/javascript" src="<?= $liendusite; ?>/asset/js/iframe.js"></script>
+		<!--<script type="text/javascript" src="<?= $liendusite; ?>/asset/js/iframe.js"></script> -->
 		<?php
 	}
 	?>

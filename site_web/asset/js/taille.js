@@ -10,5 +10,5 @@ function taille()
 		h=window.innerHeight;
 	}
 	document.getElementById('video').style.height = h + "px";
-	document.getElementById('subsection').style.height = h + "px";
+	document.getElementById('subsection').style.height = h*0.85 + "px";
 }
