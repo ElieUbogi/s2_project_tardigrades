@@ -207,6 +207,7 @@
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
     <Compile Include="Assets\scripts\ancienchar.cs" />
+    <Compile Include="Assets\scripts\EndPanel.cs" />
     <Compile Include="Assets\scripts\fin.cs" />
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\scripts\safe.cs" />

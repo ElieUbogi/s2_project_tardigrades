@@ -4,28 +4,33 @@ using UnityEngine;
 
 public class stars : MonoBehaviour
 {
-    public GameObject menuPanel;
-    public GameObject star;
     public player Player;
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+    public int three_star;
 
     // Update is called once per frame
     void Update()
     {
-        if (menuPanel.active)
+        uint score = Player.score;
+        if (score <= three_star)
         {
-            uint score = Player.score;
-            if (score <= 6)
-            {
-                switch (star.tag)
-                {
-                    case "star_1":
-                        star.SetActive(true);
-                        break;
-                    case "star_2":
-                        star.SetActive(true);
-                        break;
-                }
-            }
+            star1.SetActive(true);
+            star2.SetActive(true);
+            star3.SetActive(true);
+        }
+        else if (score > three_star && score <= three_star * 1.2)
+        {
+            star1.SetActive(true);
+            star2.SetActive(true);
+            star3.SetActive(false);
+        }
+        else if (score > three_star * 1.2 && score <= three_star * 1.5)
+        {
+            star1.SetActive(true);
+            star2.SetActive(false);
+            star3.SetActive(false);
         }
     }
 }
