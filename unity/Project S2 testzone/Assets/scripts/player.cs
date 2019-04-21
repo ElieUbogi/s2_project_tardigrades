@@ -22,6 +22,7 @@ public class player : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
+        menuPanel.SetActive(false);
         multiplicateurV=400;
         CanGo = true;
         score = 0;
