@@ -15,8 +15,6 @@ public class player : MonoBehaviour
     public GameObject Player;
     public uint score;
     public GameObject menuPanel;
-
-
     public float multiplicateurV;
     // Start is called before the first frame update
     void Start()

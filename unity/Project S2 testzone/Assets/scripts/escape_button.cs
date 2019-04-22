@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class escape_button : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class escape_button : MonoBehaviour
                 player.SetActive(true);
             }
             i++;
+            buttons[0].onClick.AddListener(() => ActionsOnButtons(0));
         }
     }
 
@@ -41,10 +43,8 @@ public class escape_button : MonoBehaviour
         switch (i)
         {
             case 0:
-            {
-                    Debug.Log("lama");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
-            }
         }
     }
 }
