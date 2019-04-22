@@ -23,6 +23,11 @@ public class action_buttons : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void GoToSelection()
+    {
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    }
+
     public void Quit()
     {
         Application.Quit();
