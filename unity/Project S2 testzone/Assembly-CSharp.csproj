@@ -214,6 +214,7 @@
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\scripts\safe.cs" />
     <Compile Include="Assets\scripts\score.cs" />
+    <Compile Include="Assets\scripts\selectMenu.cs" />
     <Compile Include="Assets\scripts\stars.cs" />
     <Compile Include="Assets\scripts\Wall.cs" />
     <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
