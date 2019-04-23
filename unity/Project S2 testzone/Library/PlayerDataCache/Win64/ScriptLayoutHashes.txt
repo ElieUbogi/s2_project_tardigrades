@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/unity/2eme_soutenance/Project S2 testzone.exe
+D:/unity/2eme_soutenance/jeu_solo/Escape Cube.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/scene S2 test.unity
