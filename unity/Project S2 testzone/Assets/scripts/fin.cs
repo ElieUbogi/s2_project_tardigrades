@@ -10,7 +10,7 @@ public class fin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        safe = GameObject.Find("safe");
+        //safe = GameObject.Find("safe");
     }
     void OnTriggerEnter(Collider chose)
     {

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E9AB019C-575F-7F7D-75B3-113A2F2CC8A4}</ProjectGuid>
+    <ProjectGuid>{4BC5A8C3-9908-089C-16FD-3D28E9B308C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -208,14 +208,19 @@
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
     <Compile Include="Assets\scripts\action_buttons.cs" />
     <Compile Include="Assets\scripts\ancienchar.cs" />
+    <Compile Include="Assets\scripts\camera.cs" />
+    <Compile Include="Assets\scripts\createTerrain.cs" />
+    <Compile Include="Assets\scripts\EndPanel.cs" />
     <Compile Include="Assets\scripts\escape_button.cs" />
     <Compile Include="Assets\scripts\fin.cs" />
+    <Compile Include="Assets\scripts\Glass.cs" />
     <Compile Include="Assets\scripts\lama.cs" />
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\scripts\safe.cs" />
     <Compile Include="Assets\scripts\score.cs" />
     <Compile Include="Assets\scripts\selectMenu.cs" />
     <Compile Include="Assets\scripts\stars.cs" />
+    <Compile Include="Assets\scripts\TPlorteur.cs" />
     <Compile Include="Assets\scripts\Wall.cs" />
     <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
     <None Include="Assets\Photon Unity Networking\link.xml" />
@@ -225,19 +230,19 @@
     <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />
     <None Include="Assets\Photon Unity Networking\changelog.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -441,25 +446,25 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/projects/s2_project_tardigrades/unity/Project S2 testzone/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/unity/Project S2 testzone elie version/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -809,7 +814,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2B5F1889-7AF2-4840-3ACC-0B6F7C089387}</Project>
+      <Project>{D1D6B31C-BB52-9ADD-A31C-B2D0D74F4F6E}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

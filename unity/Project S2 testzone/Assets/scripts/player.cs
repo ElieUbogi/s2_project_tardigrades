@@ -6,6 +6,7 @@ public class player : MonoBehaviour
 {
     public bool CanGo;
     public bool Menu;
+    public bool Breaker;
     int nbrSaut;
     Rigidbody rigid;
     public float vitesseX;
@@ -15,6 +16,9 @@ public class player : MonoBehaviour
     public GameObject Player;
     public uint score;
     public GameObject menuPanel;
+    public List<GameObject> toRes = new List <GameObject>();
+
+
     public float multiplicateurV;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,7 @@ public class player : MonoBehaviour
         multiplicateurV=400;
         CanGo = true;
         score = 0;
+        Breaker = false;
     }
 
     void OnTriggerEnter(Collider chose)
@@ -32,12 +37,36 @@ public class player : MonoBehaviour
         {
             this.resetV();
             CanGo = true;
+            Breaker = false;
+            foreach (GameObject a in toRes)
+            {
+                
+                
+                a.SetActive(true);
+            }
+
+            toRes = new List<GameObject>();
+        }
+        if (chose.gameObject.tag == ("PUGlass"))
+        {
+            Breaker = true;
+            toRes.Add(chose.gameObject);
+            chose.gameObject.SetActive(false);
         }
     }
 
     void OnCollisionEnter(Collision chose)
     {
         if (chose.gameObject.tag == ("Wall"))
+        {
+            CanGo = true;
+        }
+        if (chose.gameObject.tag == ("Glass")&&Breaker)
+        {
+            toRes.Add(chose.gameObject);
+            chose.gameObject.SetActive(false);
+        }
+        if (chose.gameObject.tag == ("Glass") && !Breaker)
         {
             CanGo = true;
         }
