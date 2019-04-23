@@ -1040,11 +1040,6 @@ MonoBehaviour:
   player: {fileID: 541437166}
   panel: {fileID: 1351967798}
   safe: {fileID: 0}
-  buttons:
-  - {fileID: 486129768}
-  - {fileID: 1189834432}
-  - {fileID: 529492325}
-  - {fileID: 427702380}
 --- !u!114 &513048988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanGo: 0
   Menu: 0
+  Breaker: 0
   vitesseX: 0
   vitesseY: 0
   vitesseZ: 0
@@ -1319,6 +1315,7 @@ MonoBehaviour:
   Player: {fileID: 541437166}
   score: 0
   menuPanel: {fileID: 642354858}
+  toRes: []
   multiplicateurV: 400
 --- !u!1001 &565535827
 PrefabInstance:
@@ -1394,11 +1391,11 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: c7d2a63885908514e8a720db368d8ae8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd22db384f5aab64890b5780b9537cf8, type: 2}
+      objectReference: {fileID: 2100000, guid: 8da26a4789f97e04fa815f40240e94d9, type: 2}
     - target: {fileID: 2300002, guid: c7d2a63885908514e8a720db368d8ae8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd22db384f5aab64890b5780b9537cf8, type: 2}
+      objectReference: {fileID: 2100000, guid: c79727ea4b0e65541ac595884628ab18, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7d2a63885908514e8a720db368d8ae8, type: 3}
 --- !u!1 &642354858
