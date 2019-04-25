@@ -6,19 +6,15 @@ public class camera : MonoBehaviour
 {
    
     PhotonView view;
-    public GameObject terrain1;
-    public GameObject terrain2;
+    
     private GameObject ActiveTerrain;
-    private List<Camera> allCam;
+    public List<Camera> allCam;
     
     // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     void OnJoinedRoom()
     {
-        allCam = new List<Camera>();
+        /*allCam = new List<Camera>();
         string s = "";
         if (PhotonNetwork.isMasterClient)
         {
@@ -27,13 +23,14 @@ public class camera : MonoBehaviour
         }
         else
         {
-            ActiveTerrain = terrain1;
+            ActiveTerrain = terrain2;
            // Display.displays[1].Activate();
         }
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 16; i++)
         {
-            if (i < 4)
+
+             if (i < 4)
             {
                 s += 'S';
                 
@@ -69,8 +66,9 @@ public class camera : MonoBehaviour
 
             allCam.Add(ActiveTerrain.transform.Find("Cameras").Find("Cam"+s).Find("Camera").gameObject.GetComponent<Camera>());
             s = "";
+            
             // ajout de la camera en fonction de s "elle permet de bien selectionner les 8"
-        }
+        }*/
         
         
         
@@ -131,10 +129,40 @@ public class camera : MonoBehaviour
             ActiveCam(6);
 
         }
-        if(Input.GetKeyDown(KeyCode.F8))
+        if(Input.GetKeyDown(KeyCode.Alpha1))
         {
             ActiveCam(7);
 
         }
+        if(Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ActiveCam(8);
+
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha3))
+        {
+       
+            ActiveCam(9);
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            ActiveCam(10);
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            ActiveCam(11);
+
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            ActiveCam(12);
+
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            ActiveCam(13);
+
+        }
+        
     }
 }

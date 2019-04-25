@@ -282,7 +282,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -339,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576480593347428306, guid: 4bd03b010f8e062409794acc5d9cbde6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4771405522759606948, guid: 4bd03b010f8e062409794acc5d9cbde6,
         type: 3}
@@ -614,7 +619,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1016,7 +1021,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286570043}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &286570046
 Camera:
   m_ObjectHideFlags: 0
@@ -1050,7 +1055,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1294,7 +1299,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1587,8 +1592,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e0a6c74ea4d6c4b9a76b3e739831a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain1: {fileID: 1954557563}
-  terrain2: {fileID: 189616244}
+  allCam:
+  - {fileID: 1475960868}
+  - {fileID: 2008131131}
+  - {fileID: 1887952163}
+  - {fileID: 1351040661}
+  - {fileID: 1245232384}
+  - {fileID: 1475843362}
+  - {fileID: 1330777655}
+  - {fileID: 1906140142}
+  - {fileID: 1495515144}
+  - {fileID: 1794679037}
+  - {fileID: 6718079}
+  - {fileID: 359596705}
+  - {fileID: 1941054574}
+  - {fileID: 29291310}
+  - {fileID: 1538951044}
+  - {fileID: 286570046}
 --- !u!1 &481606660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,7 +2465,7 @@ GameObject:
   - component: {fileID: 846675736}
   m_Layer: 0
   m_Name: WallPosX
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3371,7 +3391,7 @@ GameObject:
   - component: {fileID: 1201419579}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3947,7 +3967,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 3
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -4792,7 +4812,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -5013,7 +5033,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -5033,6 +5053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576480593347428306, guid: 4bd03b010f8e062409794acc5d9cbde6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 4771405522759606948, guid: 4bd03b010f8e062409794acc5d9cbde6,
         type: 3}
@@ -5111,7 +5136,7 @@ GameObject:
   - component: {fileID: 1638431479}
   m_Layer: 0
   m_Name: Roof
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5625,7 +5650,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -6261,7 +6286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 27ba617c1a0aa1d4aab55be4bba5c52a, type: 2}
+  - {fileID: 2100000, guid: 27a63e3a7868c874e8336e73096c0a1b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6520,7 +6545,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -6734,7 +6759,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -6806,8 +6831,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e0a6c74ea4d6c4b9a76b3e739831a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain1: {fileID: 1954557563}
-  terrain2: {fileID: 189616244}
+  allCam:
+  - {fileID: 1475960868}
+  - {fileID: 2008131131}
+  - {fileID: 1887952163}
+  - {fileID: 1351040661}
+  - {fileID: 1245232384}
+  - {fileID: 1475843362}
+  - {fileID: 1330777655}
+  - {fileID: 1906140142}
+  - {fileID: 1495515144}
+  - {fileID: 1794679037}
+  - {fileID: 6718079}
+  - {fileID: 359596705}
+  - {fileID: 1941054574}
+  - {fileID: 29291310}
+  - {fileID: 1538951044}
+  - {fileID: 286570046}
 --- !u!1 &2045691582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6998,7 +7038,7 @@ GameObject:
   - component: {fileID: 2067420715}
   m_Layer: 0
   m_Name: WallPosX
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7047,7 +7087,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 27ba617c1a0aa1d4aab55be4bba5c52a, type: 2}
+  - {fileID: 2100000, guid: 27a63e3a7868c874e8336e73096c0a1b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

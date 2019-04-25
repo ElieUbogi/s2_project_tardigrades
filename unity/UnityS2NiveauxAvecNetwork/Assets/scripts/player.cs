@@ -33,7 +33,7 @@ public class player : MonoBehaviour
         }
         else
         {
-            safe = GameObject.Find("Terrain").transform.Find("Spawn").gameObject;
+            safe = GameObject.Find("Terrain2").transform.Find("Spawn").gameObject;
         }
         rigid = GetComponent<Rigidbody>();
         menuPanel = GameObject.Find("Canvas menu");

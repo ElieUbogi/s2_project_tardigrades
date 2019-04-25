@@ -44,7 +44,7 @@ public class NetworkController : MonoBehaviour
         }
         else
         {
-            ActiveTerrain = terrain1;
+            ActiveTerrain = terrain2;
         }
 
         cord = ActiveTerrain.transform.Find("Spawn").position;
