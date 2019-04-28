@@ -22,11 +22,6 @@ public class fin : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider chose)
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
