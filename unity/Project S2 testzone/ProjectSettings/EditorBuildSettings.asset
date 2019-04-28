@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/scene S2 test.unity
+    path: Assets/Scenes/Menu.unity
+    guid: 27441e18464e05848a3595cf23c97e98
+  - enabled: 1
+    path: Assets/Scenes/scene S2 test.unity
     guid: d1ed75450f208924fad1189758800b76
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: a016278b42f2ddf41a9cf3954256781c
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 042392d8c3a7e064ea8f1805f620591e
+  - enabled: 1
+    path: Assets/Scenes/select_lvl.unity
+    guid: 0ecd218ba34be1b4d8b7d96fe0083e92
   m_configObjects: {}

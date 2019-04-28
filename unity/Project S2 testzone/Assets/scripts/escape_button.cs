@@ -10,7 +10,6 @@ public class escape_button : MonoBehaviour
     public GameObject player;
     public GameObject panel;
     public GameObject safe;
-    public List<Button> buttons;
     private int i = 0;
 
     private void Start()
@@ -34,17 +33,6 @@ public class escape_button : MonoBehaviour
                 player.SetActive(true);
             }
             i++;
-            buttons[0].onClick.AddListener(() => ActionsOnButtons(0));
-        }
-    }
-
-    private void ActionsOnButtons(int i)
-    {
-        switch (i)
-        {
-            case 0:
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                break;
         }
     }
 }
