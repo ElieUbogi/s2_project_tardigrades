@@ -54,6 +54,8 @@ public class player : MonoBehaviour
 
             toRes = new List<GameObject>();
         }
+
+        
         if (chose.gameObject.tag == ("PUGlass"))
         {
             Breaker = true;
@@ -69,6 +71,11 @@ public class player : MonoBehaviour
         {
             toRes.Add(chose.gameObject);
             chose.gameObject.SetActive(false);
+        }
+        if (chose.gameObject.tag == ("Death"))
+        {
+            
+            this.transform.position = safe.transform.position;
         }
         if (chose.gameObject.tag == ("Glass") && !Breaker)
         {

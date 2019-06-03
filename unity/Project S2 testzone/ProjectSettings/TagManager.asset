@@ -15,6 +15,7 @@ TagManager:
   - star_2
   - PUGlass
   - Face
+  - Death
   layers:
   - Default
   - TransparentFX

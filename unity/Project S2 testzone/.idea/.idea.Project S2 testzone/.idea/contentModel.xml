@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\maxime\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\maxime\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Project S2 testzone.1732448441.00" t="ExcludeRecursive" />
-    <e p="D:\unity\unityS2\Project S2 testzone" t="IncludeRecursive">
+    <e p="C:\Users\maxime\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Project S2 testzone.-2071571813.00" t="ExcludeRecursive" />
+    <e p="C:\Users\maxime\s2_project_tardigrades\s2_project_tardigrades\unity\Project S2 testzone" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -289,6 +289,7 @@
           <e p="escape_button.cs" t="Include" />
           <e p="fin.cs" t="Include" />
           <e p="Glass.cs" t="Include" />
+          <e p="Interruptor.cs" t="Include" />
           <e p="lama.cs" t="Include" />
           <e p="player.cs" t="Include" />
           <e p="playerSide.cs" t="Include" />
