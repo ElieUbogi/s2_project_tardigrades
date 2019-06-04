@@ -43,4 +43,9 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
+  - ActiveMenuPanelNetwork
+  - ActiveEndPanelNetwork
+  - ActiveLoseEndPanel
+  - ActiveWinEndPanel
+  - RPCNextLevel
   DisableAutoOpenWizard: 1

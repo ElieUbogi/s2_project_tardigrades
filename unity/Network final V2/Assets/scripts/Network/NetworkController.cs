@@ -4,6 +4,7 @@ using System.Security;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class NetworkController : MonoBehaviour
 {
@@ -16,7 +17,15 @@ public class NetworkController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings(_gameVersion);
+        if (PhotonNetwork.connected)//Joined another Scene
+        {
+            PutPlayers();
+        }
+        else
+        {
+            PhotonNetwork.ConnectUsingSettings(_gameVersion);
+        }
+
     }
 
     // Update is called once per frame
@@ -35,29 +44,53 @@ public class NetworkController : MonoBehaviour
         Debug.Log("Can't join random room ! So, we create a new one");
         PhotonNetwork.CreateRoom(null);
     }
-    void OnJoinedRoom()
+
+    public void PutPlayers()
     {
-        Debug.Log("Connect Succesful !");
         if (PhotonNetwork.isMasterClient)
         {
         
             
-          GameObject g =  PhotonNetwork.Instantiate("Prefabs/" + player.name, terrain1.transform.Find("spawn").position, Quaternion.identity, 0); //Quaternion.indentity = player.rotation
-          terrain1.transform.Find("Cameras").GetComponent<camera>().SetCameraOther(terrain2.transform.Find("Cameras").GetComponent<camera>().allCam);//Set all other camera to false
+            PhotonNetwork.Instantiate("Prefabs/" + player.name, terrain1.transform.Find("spawn").position, Quaternion.identity, 0); //Quaternion.indentity = player.rotation
+            if (SceneManager.GetActiveScene().name != "Net_Level_1")
+            {
+                terrain1.transform.Find("Cameras").GetComponent<camera>()
+                    .SetCameraOther(terrain2.transform.Find("Cameras").GetComponent<camera>()
+                        .allCam); //Set all other camera to false
+            }
+            else
+            {
+                terrain2.transform.Find("Cameras").gameObject.SetActive(false);
+            }
             // g.GetComponent<player>().GoStart(terrain);
-          terrain1.transform.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.masterClient);
+            terrain1.transform.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.masterClient);
               
         }
+        
+      
         else
         {
-        PhotonNetwork.Instantiate("Prefabs/" + player.name, terrain2.transform.Find("spawn").position,
+            PhotonNetwork.Instantiate("Prefabs/" + player.name, terrain2.transform.Find("spawn").position,
                 Quaternion.identity, 0);
-            terrain2.transform.Find("Cameras").GetComponent<camera>().SetCameraOther(terrain1.transform.Find("Cameras").GetComponent<camera>().allCam);
-          terrain2.transform.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player);
+            if (SceneManager.GetActiveScene().name != "Net_Level_1")
+            {
+                terrain2.transform.Find("Cameras").GetComponent<camera>().SetCameraOther(terrain1.transform.Find("Cameras").GetComponent<camera>().allCam);
+            }
+            else
+            {
+                terrain1.transform.Find("Cameras").gameObject.SetActive(false);
+            }
+           
+            terrain2.transform.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.player);
      
         }
         
-        
+    }
+    
+    void OnJoinedRoom()
+    {
+        Debug.Log("Connect Succesful !");
+        SceneManager.LoadScene("Net_Level_1");
     }
 
 }

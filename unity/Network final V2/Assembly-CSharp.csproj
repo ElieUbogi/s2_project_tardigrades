@@ -245,9 +245,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\scripts\action_buttons.cs" />
     <Compile Include="Assets\scripts\ancienchar.cs" />
-    <Compile Include="Assets\scripts\camera.cs" />
     <Compile Include="Assets\scripts\cams\cam0.cs" />
     <Compile Include="Assets\scripts\cams\cam1.cs" />
     <Compile Include="Assets\scripts\cams\cam2.cs" />
@@ -256,9 +254,9 @@
     <Compile Include="Assets\scripts\cams\cam5.cs" />
     <Compile Include="Assets\scripts\cams\cam6.cs" />
     <Compile Include="Assets\scripts\cams\cam7.cs" />
+    <Compile Include="Assets\scripts\cams\camera.cs" />
     <Compile Include="Assets\scripts\createTerrain.cs" />
     <Compile Include="Assets\scripts\EndPanel.cs" />
-    <Compile Include="Assets\scripts\escape_button.cs" />
     <Compile Include="Assets\scripts\fin.cs" />
     <Compile Include="Assets\scripts\Glass.cs" />
     <Compile Include="Assets\scripts\lama.cs" />
@@ -267,10 +265,13 @@
     <Compile Include="Assets\scripts\player.cs" />
     <Compile Include="Assets\scripts\playerSide.cs" />
     <Compile Include="Assets\scripts\safe.cs" />
-    <Compile Include="Assets\scripts\score.cs" />
-    <Compile Include="Assets\scripts\selectMenu.cs" />
     <Compile Include="Assets\scripts\stars.cs" />
     <Compile Include="Assets\scripts\TPlorteur.cs" />
+    <Compile Include="Assets\scripts\UI\action_buttons.cs" />
+    <Compile Include="Assets\scripts\UI\escape_button.cs" />
+    <Compile Include="Assets\scripts\UI\optionPanel.cs" />
+    <Compile Include="Assets\scripts\UI\score.cs" />
+    <Compile Include="Assets\scripts\UI\selectMenu.cs" />
     <Compile Include="Assets\scripts\Wall.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

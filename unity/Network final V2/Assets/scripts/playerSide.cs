@@ -13,9 +13,9 @@ public class playerSide : MonoBehaviour
 
     void OnTriggerEnter(Collider chose)
     {
-        if (chose.gameObject.tag == ("Face"))
+        if (chose.gameObject.CompareTag(("Face")))
         {
-            player.CanGo = true;
+            this.transform.parent.parent.GetComponent<player>().CanGo = true; //find the associated player and set the Cango to true.
         }
     }
 

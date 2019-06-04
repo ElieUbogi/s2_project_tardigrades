@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class player : MonoBehaviour
     public GameObject menuPanel;
     public uint score;
     public bool Breaker;
-    public static bool CanGo;
+    public bool CanGo;
     public bool checker;
     public float vitesseX;
     public float vitesseY;
@@ -21,15 +23,17 @@ public class player : MonoBehaviour
     public GameObject SavePos;
     private GameObject ActivTerrain;
     private PhotonView _view;
+    private bool _isSolo;// if the player is on Solo mode
     
     // Start is called before the first frame update
     void Start()
     {
+        _isSolo = SceneManager.GetActiveScene().name[0] == 'L';
         _view = GetComponent<PhotonView>();
         SavePos = Instantiate(new GameObject());
         menuPanel = new GameObject();
         bool test = PhotonNetwork.isMasterClient;
-        if (PhotonNetwork.isMasterClient)
+        if (PhotonNetwork.isMasterClient || _isSolo) //load the first terrain
         {
             ActivTerrain=GameObject.Find("terrain");
             safe = GameObject.Find("terrain").transform.Find("spawn").gameObject;
@@ -61,8 +65,10 @@ public class player : MonoBehaviour
     
     void OnTriggerEnter(Collider chose)
     {
-        if (chose.gameObject.tag == ("safe"))
+        if (chose.gameObject.CompareTag(("safe")))
         {
+            
+            /*
             resetV();
             CanGo = true;
             Breaker = false;
@@ -74,8 +80,11 @@ public class player : MonoBehaviour
             SavePos.transform.position = this.transform.position;
 
             toRes = new List<GameObject>();
+            */
+            
         }
-        if (chose.gameObject.tag == ("PUGlass"))
+        
+        if (tag.Contains("PUGlass") && chose.gameObject.CompareTag(("PUGlass")))
         {
             Breaker = true;
             toRes.Add(chose.gameObject);
@@ -102,7 +111,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_view.isMine)
+        if (_isSolo || _view.isMine )
         {
             checker = CanGo;
             if (Input.GetKeyDown(KeyCode.RightShift))
@@ -337,8 +346,6 @@ public class player : MonoBehaviour
                 }
             }
 
-
-
             rigid.velocity = new Vector3(vitesseX * 400 * Time.deltaTime, vitesseY * 400 * Time.deltaTime,
                 vitesseZ * 400 * Time.deltaTime);
             if (Input.GetKeyDown(KeyCode.R))
@@ -380,4 +387,11 @@ public class player : MonoBehaviour
             }
         }
     }
+    [PunRPC]
+    void RPCNextLevel()
+    {
+        string actualLevel = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("Net_Level_" + (Int32.Parse(""+actualLevel[actualLevel.Length -1])+2));
+    }
+   
 }

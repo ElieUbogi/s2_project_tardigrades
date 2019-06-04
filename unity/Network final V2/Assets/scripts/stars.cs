@@ -13,7 +13,7 @@ public class stars : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uint score = Player.score;
+        /*uint score = Player.score;
         if (score <= three_star)
         {
             star1.SetActive(true);
@@ -31,6 +31,6 @@ public class stars : MonoBehaviour
             star1.SetActive(true);
             star2.SetActive(false);
             star3.SetActive(false);
-        }
+        }*/
     }
 }

@@ -2,12 +2,16 @@ Win64
 PlayerPath?
 D:/victor/travail victor/epita/Projet Escape_cube/Escape cube/Network final V2/test exe/Escape Cube.exe
 SceneListBegin?
-Assets/Scenes/Menu.unity
-Assets/Scenes/scene S2 test.unity
-Assets/Scenes/Level_2.unity
-Assets/Scenes/EndGame.unity
-Assets/Scenes/select_lvl.unity
-Assets/Scenes/level_3.unity
+Assets/Scenes/UI/Menu.unity
+Assets/Scenes/Levels/Level_1.unity
+Assets/Scenes/Levels/Level_2.unity
+Assets/Scenes/UI/EndGame.unity
+Assets/Scenes/UI/select_lvl.unity
+Assets/Scenes/Levels/level_3.unity
+Assets/Scenes/Network/Net_Level_1.unity
+Assets/Scenes/UI/Connection in Network.unity
+Assets/Scenes/Network/Net_Level_2.unity
+Assets/Scenes/Network/Net_Level_3.unity
 SceneListEnd?
 39eb4122b25e4249ed1cd6893d0544fe Assembly-CSharp.dll:.HighlightOwnedGameObj
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PunTeams
@@ -120,7 +124,6 @@ dfd7a2ae89b53ee12027e54728efd088 Assembly-CSharp.dll:.PhotonHandler
 55527c4ad510392679c5e9356f5ac24b Assembly-CSharp.dll:.GUIFriendsInRoom
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OnClickDisableObj
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.playerSide
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.selectMenu
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -184,19 +187,21 @@ bae14f4ccd4272b02cb3643d22a53ac8 Assembly-CSharp.dll:.PickupDemoGui
 7602c8d40ade510f4c0e781c7062b246 Assembly-CSharp.dll:.ChannelSelector
 9393ca2ec06e4d500f46b5a90840eb44 Assembly-CSharp.dll:.PhotonRigidbodyView
 0b4a7c3d5e12b38090592ee2be59f6f4 Assembly-CSharp.dll:.InstantiateCube
+bb664d3907e97b66af194cc1ea77ed4f Assembly-CSharp.dll:.action_buttons
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.IgnoreUiRaycastWhenInactive
 18d89cb858d0cf8a1f38bb786789eaa7 Assembly-CSharp.dll:.ChatAppIdCheckerUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GUIController
 0568889868f6fb744b2ecba530349fde Assembly-CSharp.dll:.ExampleWheelController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.selectMenu
 1768f595e23c4828f170054badc43e50 Assembly-CSharp.dll:.stars
+98695cd55cdb667e29ab4a731f09adfc Assembly-CSharp.dll:.score
 15aa75104394eec0bc99c0cdb18f7155 Assembly-CSharp.dll:.PhotonTransformView
 29b92820152def7eff83e63937eabfe7 Assembly-CSharp.dll:.camera
 17c6b61ef664ddb751d783bf4c747c64 Assembly-CSharp.dll:.OnClickDestroy
 1e3cccb005a36e8a4807cdda0ec0a42e Assembly-CSharp.dll:.AudioRpc
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.cam3
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.action_buttons
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 d4dacc6750ca362eb286d08d4a339689 Assembly-CSharp.dll:.PickupItem
 8578df108be9457cf3d3d5da362d8b06 Assembly-CSharp.dll:.ServerSettings
@@ -220,12 +225,11 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.cam5
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OnAwakePhysicsSettings
 9c3b0e9378d4a08394355b70fbf503cf Assembly-CSharp.dll:.OnClickLoadSomething
-a25491c337912534ddeed44423607fea Assembly-CSharp.dll:.escape_button
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PointedAtGameObjectInfo
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.cam0
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
-7fdc60d6b5509c649ca6170769892613 Assembly-CSharp.dll:.player
+d32107a262fbac57415ee34b31ccce21 Assembly-CSharp.dll:.player
 e51c09a4cc447f11db225afcd8e3e490 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 0c7e76cb5b160261f9cc2569ec3db865 Assembly-CSharp.dll:.RPGCamera
 f93eaf5d07a25df3b7c3013ce23264b5 Assembly-CSharp.dll:.OnClickCallMethod
@@ -253,7 +257,6 @@ f3da7dc96bb8aee9efa3f969de21c05e Assembly-CSharp.dll:.CubeInter
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Demo2DJumpAndRun
 933783f419e75b4694cd7f9cd79e26e0 Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.PlayerManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RandomMatchmaker
-98695cd55cdb667e29ab4a731f09adfc Assembly-CSharp.dll:.score
 9db963832ef7feebd35f44e6ad6f646c Assembly-CSharp.dll:.OnJoinedInstantiate
 d7f7bc402888d42a0dbb080693e6863c Assembly-CSharp.dll:ExitGames.Demos.DemoAnimator.LoaderAnime
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
@@ -277,6 +280,7 @@ a83b2b68e84aa6486b082550f6a2e761 Assembly-CSharp.dll:.NetworkController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.cam7
 034726260f2f2cabf39b9cc2edad8c2a Assembly-CSharp.dll:.ManualPhotonViewAllocator
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+235a1e8275c5d1ab2a1c0f017d90e1b5 Assembly-CSharp.dll:.escape_button
 0d07d8506393319facb4e9e723ca368a Assembly-CSharp.dll:.JumpAndRunMovement
 a7fdc7565fb5d0a515ff7026dc6e7a36 Assembly-CSharp.dll:.DemoMecanimGUI
 2b53d93770b9036b2fd1c7854560bc69 Assembly-CSharp.dll:.MoveByKeys
@@ -292,10 +296,11 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 fee10f065bb8577dc41837e92d083eaf Assembly-CSharp.dll:.WorkerMenu
 6d728b44c318bc3c9d5bb05547ed6c70 Assembly-CSharp.dll:.createTerrain
-3d0197d8eeee4eef6dd93f22d80f8657 Assembly-CSharp.dll:.fin
+02d69418aeab4ed3b2109048bcd3a5b4 Assembly-CSharp.dll:.fin
 e1b8eaae6a90f88343f8be6d517488f6 Assembly-CSharp.dll:.PhotonView
 6e40df0640db68ace23b58a832a9da7a Assembly-CSharp.dll:.InRoomChat
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0187dd73f0a164e92fc706484c727b71 Assembly-CSharp.dll:.EndPanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ClickDetector
+15b41d8ca5ac624a629255626872cd45 Assembly-CSharp.dll:.optionPanel
 e7e6571fb792bd5234807be154062d6f Assembly-CSharp.dll:.CubeExtra
