@@ -13,30 +13,38 @@ public class fin : MonoBehaviour
     {
         //safe = GameObject.Find("safe");
     }
-    //[PunRPC]
     void OnTriggerEnter(Collider chose)
     {
-        if (chose.gameObject.CompareTag(("Player")) )
-        {/*
-            chose.transform.position = safe.transform.position;
-            menuPanel.SetActive(true);
-            chose.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            */
-            
-            //action_buttons.NextLevelStatic();
-            view = this.GetComponent<PhotonView>();
-            view = PhotonView.Get(chose);
+        if (chose.gameObject.CompareTag(("Player")))
+        {
+            /*
+                        chose.transform.position = safe.transform.position;
+                        menuPanel.SetActive(true);
+                        chose.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+                        */
+
+            view = chose.GetComponent<PhotonView>();
             if (view.isMine)
             {
-                //view.RPC("ActiveEndPanelNetwork",PhotonTargets.Others);
                 ActiveWinEndPanel();
-                view.RPC("ActiveLoseEndPanel", PhotonTargets.OthersBuffered);
+                PhotonView testView = GameObject.Find("terrain").GetPhotonView();
+                if (!testView.isMine)
+                {
+                    testView.RPC("ActiveLoseEndPanel",testView.owner);
+                    
+                }
+                else
+                {
+                    testView = GameObject.Find("terrain2").GetPhotonView();
+                    testView.RPC("ActiveLoseEndPanel",testView.owner);
+                }
             }
             else
             {
                 ActiveLoseEndPanel();
             }
         }
+
     }
 
     // the [PunRpc] is for call to all players

@@ -17,12 +17,13 @@ public class action_buttons : MonoBehaviour
 
     public void NextLevelNetwork()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PhotonView>().RPC("RPCNextLevel",PhotonTargets.AllBuffered);
+        GameObject[] play = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var e in play)
+        {
+            e.GetComponent<PhotonView>().RPC("RPCNextLevel", PhotonTargets.AllBuffered);
+        }
+        
     }
-
-  
-    
-    
 
     public static void NextLevelStatic()
     {

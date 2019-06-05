@@ -7,11 +7,11 @@ public class selectMenu : MonoBehaviour
 {
     public void level1()
     {
-        SceneManager.LoadScene("Net_Level_1");
+        SceneManager.LoadScene("Level_1");
     }
 
     public void level2()
     {
-        SceneManager.LoadScene("Net_Level_3");
+        SceneManager.LoadScene("Level_2");
     }
 }

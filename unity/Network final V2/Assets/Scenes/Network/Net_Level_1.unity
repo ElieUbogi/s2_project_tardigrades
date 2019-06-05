@@ -996,6 +996,7 @@ GameObject:
   - component: {fileID: 388689655}
   - component: {fileID: 388689657}
   - component: {fileID: 388689656}
+  - component: {fileID: 388689658}
   m_Layer: 0
   m_Name: terrain
   m_TagString: Untagged
@@ -1071,6 +1072,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &388689658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388689654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0179bd4abbf546743be74084100bad2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &427702377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +2972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539442043}
   - component: {fileID: 1539442044}
+  - component: {fileID: 1539442045}
   m_Layer: 0
   m_Name: terrain2
   m_TagString: Untagged
@@ -3015,6 +3029,18 @@ MonoBehaviour:
   instantiationId: 2
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!114 &1539442045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539442042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0179bd4abbf546743be74084100bad2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1543017006
 GameObject:
   m_ObjectHideFlags: 0
