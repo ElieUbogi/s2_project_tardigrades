@@ -19,10 +19,13 @@ public class fin : MonoBehaviour
         if (chose.gameObject.tag==("Player"))
         {
             /*
-                        chose.transform.position = safe.transform.position;
-                        menuPanel.SetActive(true);
-                        chose.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-                        */
+                chose.transform.position = safe.transform.position;
+                menuPanel.SetActive(true);
+                chose.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            */
+
+            chose.gameObject.GetComponent<player>().resetV();
+
             bool isSolo = SceneManager.GetActiveScene().name[0] == 'L';
             if (!isSolo)
             {

@@ -755,8 +755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec281fdf5ca2bd1479787f641330fb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  master: {fileID: 24100000, guid: c7273939f04847f419a7c95b700d1e11, type: 2}
-  camera: {fileID: 0}
   resolutionsDropdown: {fileID: 971293060}
 --- !u!1 &310593889
 GameObject:
@@ -2754,6 +2752,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinNet
       objectReference: {fileID: 0}
+    - target: {fileID: 96781419752941414, guid: 9c2054a1471628743872a8e5e72f2c14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96781419508267120, guid: 9c2054a1471628743872a8e5e72f2c14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 14.969971
+      objectReference: {fileID: 0}
+    - target: {fileID: 96781419508267123, guid: 9c2054a1471628743872a8e5e72f2c14,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 96781419478149352, guid: 9c2054a1471628743872a8e5e72f2c14,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2941,7 +2954,7 @@ PrefabInstance:
     - target: {fileID: 9201755557733877886, guid: 25b96995d46c6384e855d4d84945db68,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9201755557733877886, guid: 25b96995d46c6384e855d4d84945db68,
         type: 3}
@@ -2951,7 +2964,7 @@ PrefabInstance:
     - target: {fileID: 548720831589359073, guid: 25b96995d46c6384e855d4d84945db68,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 548720831589359073, guid: 25b96995d46c6384e855d4d84945db68,
         type: 3}
@@ -2963,6 +2976,28 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2196409835453679108, guid: 25b96995d46c6384e855d4d84945db68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126221556187399007, guid: 25b96995d46c6384e855d4d84945db68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453701303, guid: 25b96995d46c6384e855d4d84945db68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OptionMenuActivation
+      objectReference: {fileID: 0}
+    - target: {fileID: 453701303, guid: 25b96995d46c6384e855d4d84945db68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 453701303, guid: 25b96995d46c6384e855d4d84945db68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 73178394}
     - target: {fileID: 1588189047360241097, guid: 25b96995d46c6384e855d4d84945db68,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size

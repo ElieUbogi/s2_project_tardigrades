@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842e610e012abb748a9f6adda35b6d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "Arriv\xE9e": {fileID: 0}
+  "Arriv\xE9e": {fileID: 927630055}
 --- !u!1 &267612639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 842e610e012abb748a9f6adda35b6d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "Arriv\xE9e": {fileID: 0}
+  "Arriv\xE9e": {fileID: 249220932}
 --- !u!65 &360270288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2067,7 +2067,7 @@ PrefabInstance:
     - target: {fileID: 5669708799085536499, guid: 640886bc86c6d4047b171238f373dc4c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5669708800971014248, guid: 640886bc86c6d4047b171238f373dc4c,
         type: 3}
@@ -2193,6 +2193,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Interactable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3872331004312198140, guid: 640886bc86c6d4047b171238f373dc4c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933216883897432651, guid: 640886bc86c6d4047b171238f373dc4c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640886bc86c6d4047b171238f373dc4c, type: 3}
