@@ -757,8 +757,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1000, y: 600}
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -981,8 +981,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1881368212}
-        m_MethodName: NextLevel
+      - m_Target: {fileID: 1881368214}
+        m_MethodName: level1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1130,8 +1130,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1881368212}
-        m_MethodName: ToNetwork
+      - m_Target: {fileID: 1881368214}
+        m_MethodName: level1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1342,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 3646762671197120635, guid: 869c35837a2b01c48ae10287feca2480,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 248.93787
+      value: 216.62
       objectReference: {fileID: 0}
     - target: {fileID: 3646762671197120635, guid: 869c35837a2b01c48ae10287feca2480,
         type: 3}
@@ -1470,6 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881368213}
   - component: {fileID: 1881368212}
+  - component: {fileID: 1881368214}
   m_Layer: 0
   m_Name: Actions_buttons
   m_TagString: Untagged
@@ -1505,6 +1506,18 @@ Transform:
   m_Father: {fileID: 878539793}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881368214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881368211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcf37b70fd5b39439c32ce177aafa28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2072522341
 GameObject:
   m_ObjectHideFlags: 0
