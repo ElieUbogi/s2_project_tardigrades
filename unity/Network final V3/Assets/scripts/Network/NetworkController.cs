@@ -90,7 +90,8 @@ public class NetworkController : MonoBehaviour
     void OnJoinedRoom()
     {
         Debug.Log("Connect Succesful !");
-        SceneManager.LoadScene("Net_Level_1");
+        PutPlayers();
+        // SceneManager.LoadScene("Net_Level_1");
     }
 
 }

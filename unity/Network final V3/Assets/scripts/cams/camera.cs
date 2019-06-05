@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class camera : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class camera : MonoBehaviour
     public List<GameObject> allCam;
 
     private PhotonView _view;
+    private bool isSolo;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class camera : MonoBehaviour
         allCam.Add(caméra7);
         allCam.Add(caméra8);
         SetCamera(0);
-        bool isSolo = SceneManager.GetActiveScene().name[0] == 'L';
+        isSolo = SceneManager.GetActiveScene().name[0] == 'L';
         
     }
 
