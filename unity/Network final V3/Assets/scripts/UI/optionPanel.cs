@@ -9,6 +9,8 @@ public class optionPanel : MonoBehaviour
     [SerializeField]
     private AudioMixer master;
 
+    public GameObject camera;
+
     public Dropdown resolutionsDropdown;
 
     Resolution[] resolutions;
@@ -45,6 +47,7 @@ public class optionPanel : MonoBehaviour
     public void SetVolume (float volume)
     {
         Debug.Log(volume);
-        master.SetFloat("volume", volume);
+        // master.SetFloat("volume", volume);
+        AudioListener.volume = volume; 
     }
 }
