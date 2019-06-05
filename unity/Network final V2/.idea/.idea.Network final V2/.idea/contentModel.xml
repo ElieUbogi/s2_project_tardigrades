@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\maxime\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\maxime\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Network final V2.1497530531.00" t="ExcludeRecursive" />
+    <e p="C:\Users\maxime\s2_project_tardigrades\s2_project_tardigrades\unity\Network final V2" t="IncludeFlat">
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="Network final V2.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
