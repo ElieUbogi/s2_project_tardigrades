@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/maxime/s2_project_tardigrades/s2_project_tardigrades/unity/Network final V2/test exe/Escape Cube.exe
+D:/unity/unLamaDansUnAscenceur/Escape Cube.exe
 SceneListBegin?
 Assets/Scenes/UI/Menu.unity
 Assets/Scenes/Levels/Level_1.unity
@@ -303,5 +303,5 @@ e1b8eaae6a90f88343f8be6d517488f6 Assembly-CSharp.dll:.PhotonView
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 0187dd73f0a164e92fc706484c727b71 Assembly-CSharp.dll:.EndPanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ClickDetector
-15b41d8ca5ac624a629255626872cd45 Assembly-CSharp.dll:.optionPanel
+33db4da5ccc8a9e9b0e9794c62ec2698 Assembly-CSharp.dll:.optionPanel
 e7e6571fb792bd5234807be154062d6f Assembly-CSharp.dll:.CubeExtra

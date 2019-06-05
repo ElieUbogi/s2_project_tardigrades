@@ -29,6 +29,7 @@ public class optionPanel : MonoBehaviour
         }
 
         resolutionsDropdown.AddOptions(resolutionsName);
+        Debug.Log(currentResolutionIndex);
         resolutionsDropdown.value = currentResolutionIndex;
         resolutionsDropdown.RefreshShownValue();
     }
