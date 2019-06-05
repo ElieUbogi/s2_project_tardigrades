@@ -6,11 +6,6 @@ using UnityEngine.UI;
 
 public class optionPanel : MonoBehaviour
 {
-    [SerializeField]
-    private AudioMixer master;
-
-    public GameObject camera;
-
     public Dropdown resolutionsDropdown;
 
     Resolution[] resolutions;
