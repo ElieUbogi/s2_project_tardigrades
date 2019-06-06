@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/unity/unLamaDansUnAscenceur/Escape Cube.exe
+D:/unity/unityS2/Buildtest/Escape Cube.exe
 SceneListBegin?
 Assets/Scenes/UI/Menu.unity
 Assets/Scenes/Levels/Level_1.unity

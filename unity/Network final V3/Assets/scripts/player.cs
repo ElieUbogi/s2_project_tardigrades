@@ -84,7 +84,7 @@ public class player : MonoBehaviour
             
         }
         
-        if (tag.Contains("PUGlass") && chose.gameObject.CompareTag(("PUGlass")))
+        if (chose.gameObject.CompareTag(("PUGlass")))
         {
             Breaker = true;
             toRes.Add(chose.gameObject);
@@ -354,7 +354,19 @@ public class player : MonoBehaviour
                 {
                     menuPanel.SetActive(false);
                     score = 0;
+                    
                 }
+                this.resetV();
+                CanGo = true;
+                Breaker = false;
+                foreach (GameObject a in toRes)
+                {
+                    a.SetActive(true);
+                }
+
+                SavePos.transform.position = this.transform.position;
+
+                toRes = new List<GameObject>();
 
                 this.transform.position = safe.transform.position;
             }
