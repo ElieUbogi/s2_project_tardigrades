@@ -5,12 +5,13 @@ using UnityEngine;
 public class Interruptor : MonoBehaviour
 {
     public GameObject Door;
+    private Renderer colorEmission;
 
     public bool state;
     // Start is called before the first frame update
     void Start()
     {
-        
+        colorEmission = GetComponent<Renderer>();
     }
 
     private void OnTriggerEnter(Collider chose)
@@ -24,6 +25,14 @@ public class Interruptor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (state)
+        {
+            colorEmission.material.SetColor("_EmissionColor", Color.red);
+        }
+        else
+        {
+            colorEmission.material.SetColor("_EmissionColor", Color.green);            
+        }
         Door.SetActive(state);
     }
 }
